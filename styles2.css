@@ -38,6 +38,20 @@ body {
     background-color: #B5E1A5; /* Pantone 2254 C */
 }
 
+/* Different layout for the contact page */
+.content-container {
+    display: flex;
+    justify-content: center; /* Center content for a different feel */
+    align-items: center;
+    flex-grow: 1;
+    flex-direction: column; /* Stack content vertically */
+    margin: auto;
+    width: 100%;
+    max-width: 800px; /* Narrower width to focus on contact details */
+    /* padding: -1200px 20px; */
+    padding: -1000px;
+}
+
 .content-container {
     display: flex;
     justify-content: flex-start; /* Align content to the left */
@@ -45,41 +59,48 @@ body {
     margin: auto;
     width: 100%;
     max-width: 1200px;
-    padding: 200px;
+    padding: 50px;
 }
 
 .logo-container {
-    flex-shrink: 0;
-    width: 500px; /* Keep original size */
-    margin-left: -400px; /* Space between logo and text */
+    width: 400px; /* Smaller logo size for the contact page */
+    height: auto;
+    margin-bottom: -20px; /* Space below the logo */
 }
 
 .logo-container img {
-    width: 140%;
+    width: 100%;
     height: auto;
     display: block;
-    margin-left: -10%;
 }
 
 .company-info {
-    flex-grow: 1;
-    max-width: 700px;
-    margin-right: 40px;
+    max-width: 600px;
     color: #C1CEC8; /* Pantone 4169 C */
-    text-align: left;
+    text-align: center; /* Center align text for a different feel */
 }
 
 .company-info h1 {
-    font-size: 2.5em;
+    font-size: 2.5em; /* Larger title for emphasis */
     color: #B5E1A5; /* Pantone 2254 C */
     font-weight: 400;
     font-family: 'TWK Everett', sans-serif;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .company-info p {
     font-size: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
+}
+
+.company-info a {
+    color: #B5E1A5; /* Pantone 2254 C */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.company-info a:hover {
+    text-decoration: underline;
 }
 
 footer {
